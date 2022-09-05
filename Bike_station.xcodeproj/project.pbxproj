@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B739677A28C5E08C005F2326 /* StationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739677928C5E08C005F2326 /* StationDetailsView.swift */; };
+		B739677C28C641A2005F2326 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739677B28C641A1005F2326 /* LocationManager.swift */; };
 		B7F4204528C3B547007AE422 /* Bike_stationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4204428C3B547007AE422 /* Bike_stationApp.swift */; };
 		B7F4204728C3B547007AE422 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4204628C3B547007AE422 /* ContentView.swift */; };
 		B7F4204928C3B54A007AE422 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F4204828C3B54A007AE422 /* Assets.xcassets */; };
 		B7F4204C28C3B54A007AE422 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F4204B28C3B54A007AE422 /* Preview Assets.xcassets */; };
+		B7F4205628C3C579007AE422 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4205528C3C579007AE422 /* Station.swift */; };
+		B7F4205928C516CA007AE422 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4205828C516CA007AE422 /* APIService.swift */; };
+		B7F4205B28C5270A007AE422 /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4205A28C5270A007AE422 /* StationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B739677628C5ACE5005F2326 /* Bike-station-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bike-station-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B739677728C5AE74005F2326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B739677928C5E08C005F2326 /* StationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StationDetailsView.swift; path = Bike_station/StationDetailsView.swift; sourceTree = SOURCE_ROOT; };
+		B739677B28C641A1005F2326 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		B7F4204128C3B547007AE422 /* Bike_station.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bike_station.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F4204428C3B547007AE422 /* Bike_stationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bike_stationApp.swift; sourceTree = "<group>"; };
 		B7F4204628C3B547007AE422 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B7F4204828C3B54A007AE422 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7F4204B28C3B54A007AE422 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B7F4205528C3C579007AE422 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		B7F4205828C516CA007AE422 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		B7F4205A28C5270A007AE422 /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +63,16 @@
 		B7F4204328C3B547007AE422 /* Bike_station */ = {
 			isa = PBXGroup;
 			children = (
+				B739677628C5ACE5005F2326 /* Bike-station-Info.plist */,
+				B7F4205728C516AB007AE422 /* API Service */,
+				B7F4205428C3B5A8007AE422 /* ViewModel */,
+				B7F4205328C3B59B007AE422 /* View */,
+				B7F4205228C3B58C007AE422 /* Model */,
 				B7F4204428C3B547007AE422 /* Bike_stationApp.swift */,
 				B7F4204628C3B547007AE422 /* ContentView.swift */,
 				B7F4204828C3B54A007AE422 /* Assets.xcassets */,
 				B7F4204A28C3B54A007AE422 /* Preview Content */,
+				B739677728C5AE74005F2326 /* Info.plist */,
 			);
 			path = Bike_station;
 			sourceTree = "<group>";
@@ -65,6 +83,39 @@
 				B7F4204B28C3B54A007AE422 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B7F4205228C3B58C007AE422 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4205528C3C579007AE422 /* Station.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7F4205328C3B59B007AE422 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B739677928C5E08C005F2326 /* StationDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7F4205428C3B5A8007AE422 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4205A28C5270A007AE422 /* StationViewModel.swift */,
+				B739677B28C641A1005F2326 /* LocationManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B7F4205728C516AB007AE422 /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4205828C516CA007AE422 /* APIService.swift */,
+			);
+			path = "API Service";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F4205B28C5270A007AE422 /* StationViewModel.swift in Sources */,
 				B7F4204728C3B547007AE422 /* ContentView.swift in Sources */,
+				B739677A28C5E08C005F2326 /* StationDetailsView.swift in Sources */,
+				B739677C28C641A2005F2326 /* LocationManager.swift in Sources */,
+				B7F4205628C3C579007AE422 /* Station.swift in Sources */,
+				B7F4205928C516CA007AE422 /* APIService.swift in Sources */,
 				B7F4204528C3B547007AE422 /* Bike_stationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +326,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bike_station/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = /Users/vinoj/Desktop/My_work_space/Bike_station/Bike_station/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,7 +355,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bike_station/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = /Users/vinoj/Desktop/My_work_space/Bike_station/Bike_station/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
